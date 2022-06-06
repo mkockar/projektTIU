@@ -1,0 +1,75 @@
+@import "./colors.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    //box-sizing: border-box;
+}
+
+nav {
+    background-color: $color2;
+    display: grid;
+    //grid-template-rows: auto 40px;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 120%;
+
+    @media(max-width: 450px) {
+        grid-template-columns: auto;
+        gap: .5rem;
+        padding-right: 0;
+    }
+
+    .img {
+        display: grid;
+        justify-content: start;
+
+        a {
+            img {
+                margin-top: .5rem;
+                height: 4rem;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 2rem;
+        list-style-type: none;
+        justify-content: end;
+        align-items: center;
+
+        @media(max-width: 450px) {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(5, auto);
+            justify-items: center;
+            gap: 0;
+        }
+
+        li {
+            font-size: 110%;
+
+
+            a {
+                text-decoration: none;
+                color: $background;
+                transition: .5s;
+                margin-top: .5rem;
+
+                &:hover {
+                    color: $background;
+                    font-weight: bold;
+                    font-size: 110%;
+                }
+            }
+        }
+    }
+}

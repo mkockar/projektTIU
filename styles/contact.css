@@ -1,0 +1,123 @@
+.container-contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
+  gap: 20rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .container-contact {
+    margin: 5rem;
+  }
+}
+
+.container-contact .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (10%)[7];
+      grid-template-rows: repeat(7, 10%);
+  padding: 5rem;
+  text-align: center;
+}
+
+.container-contact .info .text {
+  font-style: italic;
+  color: #f0c474;
+}
+
+.container-contact .info .nadpis {
+  text-decoration: none;
+  color: #e0ba85;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.container-contact .contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.container-contact .contact h1 {
+  text-align: center;
+  color: #e0ba85;
+  font-size: 250%;
+  text-decoration: underline;
+}
+
+.container-contact .contact p {
+  text-align: center;
+  color: #e0ba85;
+  font-style: italic;
+  font-size: 90%;
+}
+
+.container-contact .contact .form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  min-width: 400px;
+  /*textarea {
+                border: 2px solid;
+                border-color: $color2;
+                padding: 1rem;
+            }*/
+}
+
+.container-contact .contact .form input,
+.container-contact .contact .form textarea {
+  padding: 1rem;
+  border: 2px solid;
+  border-color: #e0ba85;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container-contact .contact .form input:focus,
+.container-contact .contact .form textarea:focus {
+  outline: none;
+  border-color: #0d0c0a;
+  padding: 2rem 1rem;
+}
+
+.container-contact .contact .form input:hover,
+.container-contact .contact .form textarea:hover {
+  cursor: pointer;
+  border-color: #0d0c0a;
+}
+
+.container-contact .contact .form button {
+  background-color: #e0ba85;
+  color: #72441b;
+  font-weight: bold;
+  font-size: 110%;
+  font-style: italic;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 999px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-bottom: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.container-contact .contact .form button:hover {
+  background-color: #f0c474;
+  color: #0d0c0a;
+  font-size: 120%;
+}
+/*# sourceMappingURL=contact.css.map */

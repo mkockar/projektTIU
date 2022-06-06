@@ -1,0 +1,369 @@
+@import "./colors.scss";
+
+.content {
+
+    margin: 1rem;
+
+    hr {
+        border-color: $color2;
+    }
+
+    @media(max-width: 450px) {
+        .container>img {
+            display: none;
+        }
+    }
+
+    @media(max-width: 900px) {
+        .container>img {
+            display: none;
+        }
+    }
+
+    .o-nas-text {
+        //border: 1px solid $color2;
+        padding: 1rem;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 500px;
+            overflow: hidden;
+
+            @media(max-width: 320px) {
+                grid-template-columns: auto;
+            }
+
+            @media(max-width: px) {
+                grid-template-columns: auto;
+            }
+
+            @media(max-width: 900px) {
+                grid-template-columns: auto;
+            }
+
+
+            .content {
+                h1 {
+                    color: $color2;
+                    font-size: 250%;
+                    /*border: 1px solid $color2;
+                    border-radius: 999px;
+                    color: $background;
+                    background-color: $color2;
+                    padding-left: 1rem;
+                    //text-align: center;*/
+                }
+
+                .text {
+                    font-style: italic;
+                    padding-right: 1rem;
+                    color: $hover;
+                }
+            }
+
+            img {
+                height: 400px;
+            }
+        }
+    }
+
+    .vznik-text {
+        padding: 1rem;
+
+        .container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            padding-top: 1rem;
+
+            @media(max-width: 450px) {
+                grid-template-columns: auto;
+            }
+
+            @media(max-width: 900px) {
+                grid-template-columns: auto;
+            }
+
+
+            img {
+                width: 100%;
+                height: 400px;
+
+            }
+
+            .content {
+                h1 {
+                    color: $color2;
+                    font-size: 250%;
+                    padding-left: 1rem;
+                }
+
+                .text {
+                    font-style: italic;
+                    color: $hover;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .uspechy-text {
+        padding: 1rem;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 500px;
+            padding-top: 1rem;
+
+            @media(max-width: 450px) {
+                grid-template-columns: auto;
+            }
+
+            @media(max-width: 900px) {
+                grid-template-columns: auto;
+            }
+
+
+            img {
+                width: 100%;
+                height: 400px;
+
+            }
+
+            .content {
+                h1 {
+                    color: $color2;
+                    font-size: 250%;
+                    padding-left: 1rem;
+                }
+
+                .text {
+                    font-style: italic;
+                    color: $hover;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .nas-tim-text {
+        padding: 1rem;
+
+        h1 {
+            color: $color2;
+            //padding-bottom: 1rem;
+            font-size: 250%;
+            border: 1px solid $color2;
+            border-radius: 999px;
+            color: $background;
+            background-color: $color2;
+            padding-left: 1rem;
+            text-align: center;
+        }
+
+        .text {
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            color: $hover;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            justify-content: center;
+            align-content: center;
+            gap: 1rem;
+
+            /* @media(max-width: 768px){
+                grid-template-columns: repeat(1, auto);
+                
+                .card{
+                    width: 50%;
+                    justify-self: center;       
+                }
+            }
+
+           @media(min-width: 769px){
+                grid-template-columns: repeat(2, auto);
+            }
+
+            @media(min-width: 1024px){
+                grid-template-columns: repeat(3, auto);
+            }
+
+            @media(min-width: 1600px){
+                grid-template-columns: repeat(4, auto);
+            }*/
+
+            .card {
+                border: 1px solid $color2;
+                display: grid;
+                justify-items: center;
+                padding: 1rem;
+                //max-width: 350px;
+                gap: 1rem;
+                background: $color2;
+
+                .meno {
+                    color: $background;
+                    font-size: 150%;
+                }
+
+                .img {
+                    width: 100%
+                }
+
+                .info {
+                    display: grid;
+                    gap: .5rem;
+
+                    .pozicia {
+                        text-align: center;
+                        color: $background;
+                        font-weight: bold;
+                    }
+
+                    .description {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+
+    .sluzby-text {
+        padding: 1rem;
+
+        .container {
+            padding: 1rem;
+
+
+            h1 {
+                color: $color2;
+                padding-bottom: 1rem;
+                font-size: 250%;
+            }
+
+            .text {
+                padding-bottom: 2rem;
+                color: $hover;
+                font-style: italic;
+            }
+
+            .btn {
+                background-color: $color2;
+                text-decoration: none;
+                color: $background;
+                font-weight: bold;
+                font-size: 110%;
+                font-style: italic;
+                padding: 1rem;
+                text-align: center;
+                border-radius: 999px;
+                transition: .4s;
+                margin-bottom: 1rem;
+
+                &:hover {
+                    background-color: $hover;
+                    color: #0d0c0a;
+                    font-size: 120%;
+                }
+            }
+        }
+    }
+
+    .obchod-text {
+        padding: 1rem;
+
+        .container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            // padding: 1rem;
+
+            @media(max-width: 450px) {
+                grid-template-columns: auto;
+            }
+
+            @media(max-width: 900px) {
+                grid-template-columns: auto;
+            }
+
+
+            img {
+                width: 100%;
+                height: 400px;
+
+            }
+
+            .content {
+                h1 {
+                    color: $color2;
+                    font-size: 250%;
+                    padding-bottom: 1rem;
+                }
+
+                .text {
+                    font-style: italic;
+                    color: $hover;
+                    //padding-left: 1rem;
+                    padding-bottom: 2rem;
+                }
+
+                .btn {
+                    background-color: $color2;
+                    text-decoration: none;
+                    color: $background;
+                    font-weight: bold;
+                    font-size: 110%;
+                    font-style: italic;
+                    padding: 1rem;
+                    text-align: center;
+                    border-radius: 999px;
+                    transition: .4s;
+                    //margin-left: 1rem;
+
+                    &:hover {
+                        background-color: $hover;
+                        color: #0d0c0a;
+                        font-size: 120%;
+                    }
+                }
+            }
+        }
+    }
+
+    .kontakt-text {
+        padding: 1rem;
+
+        h1 {
+            color: $color2;
+            padding-bottom: 1rem;
+            font-size: 250%;
+        }
+
+        .text {
+            padding-bottom: 2rem;
+            color: $hover;
+            font-style: italic;
+        }
+
+        .btn {
+            background-color: $color2;
+            text-decoration: none;
+            color: $background;
+            font-weight: bold;
+            font-size: 110%;
+            font-style: italic;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 999px;
+            transition: .4s;
+            margin-bottom: 1rem;
+
+            &:hover {
+                background-color: $hover;
+                color: #0d0c0a;
+                font-size: 120%;
+            }
+        }
+    }
+}
