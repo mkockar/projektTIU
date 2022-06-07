@@ -1,8 +1,10 @@
-body{
+body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 
-    .nav-bar{}
-    .content{}
-    .footer{}
+    .nav-bar {}
+
+    .content {}
+
+    .footer {}
 }

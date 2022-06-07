@@ -1,21 +1,243 @@
 @import "./colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Lato&family=Poppins&display=swap');
+
+hr {
+    border-color: $color2;
+}
 
 .home-container {
+    background-image: url(../media/main-background.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
 
-    img {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-    .top{
+    .overlay {
         position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: $color2, $alpha: .4);
+        backdrop-filter: blur(4px);
+    }
+
+    .top {
+        position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        p{
+
+        .text {
             font-weight: bolder;
-            font-size: 300%;
+            text-align: center;
+            font-size: 6rem;
+            color: white;
+            font-family: 'Amatic SC', cursive;
+            text-shadow: $background 5px 5px 1px;
+            //text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+
+            span {
+                font-size: 4.5rem;
+            }
+        }
+    }
+}
+
+.main {
+
+    margin: 1rem;
+
+    @media(max-width: 450px) {
+        .container>img {
+            display: none;
+        }
+    }
+
+    @media(max-width: 799px) {
+        .container>img {
+            display: none;
+        }
+    }
+
+    .sluzby-text {
+        padding: 1rem;
+
+        .container {
+            padding: 1rem;
+
+            h1 {
+                color: $color2;
+                padding-bottom: 1rem;
+                font-size: 3rem;
+
+                @media(min-width: 0px) {
+                    text-align: center;
+                }
+
+                @media(min-width: 800px) {
+                    text-align: start;
+                }
+            }
+
+            .text {
+                padding-bottom: 2rem;
+                color: $hover;
+                font-style: italic;
+                font-size: 1.4rem;
+            }
+
+            .btn {
+                background-color: $color2;
+                text-decoration: none;
+                color: $background;
+                font-weight: bold;
+                font-size: 1.4rem;
+                font-style: italic;
+                padding: 1rem;
+                text-align: center;
+                border-radius: 999px;
+                transition: .4s;
+                margin-bottom: 1rem;
+
+                @media(max-width: 799px) {
+                    display: grid;
+                    justify-self: center;
+                }
+
+                &:hover {
+                    background-color: $hover;
+                    color: #0d0c0a;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .obchod-text {
+        padding: 1rem;
+
+        .container {
+            display: grid;
+            grid-template-columns: 500px 1fr;
+            // padding: 1rem;
+
+            @media(max-width: 450px) {
+                grid-template-columns: auto;
+            }
+
+            @media(max-width: 799px) {
+                grid-template-columns: auto;
+            }
+
+
+            img {
+                width: 100%;
+                height: 400px;
+
+            }
+
+            .content {
+                margin: 1rem;
+
+                h1 {
+                    color: $color2;
+                    font-size: 3rem;
+                    padding-bottom: 1rem;
+
+                    @media(min-width: 0px) {
+                        text-align: center;
+                    }
+
+                    @media(min-width: 800px) {
+                        text-align: center;
+                    }
+
+                    @media(min-width: 1000px) {
+                        text-align: start;
+                    }
+                }
+
+                .text {
+                    font-style: italic;
+                    color: $hover;
+                    //padding-left: 1rem;
+                    padding-bottom: 2rem;
+                    font-size: 1.4rem;
+                }
+
+                .btn {
+                    background-color: $color2;
+                    text-decoration: none;
+                    color: $background;
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                    font-style: italic;
+                    padding: 1rem;
+                    text-align: center;
+                    border-radius: 999px;
+                    transition: .4s;
+
+                    @media(max-width: 1000px) {
+                        display: grid;
+                        justify-self: center;
+                    }
+
+                    &:hover {
+                        background-color: $hover;
+                        color: #0d0c0a;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .kontakt-text {
+        padding: 2rem;
+
+        h1 {
             color: $color2;
+            padding-bottom: 1rem;
+            font-size: 3rem;
+
+            @media(min-width: 0px) {
+                text-align: center;
+            }
+
+            @media(min-width: 800px) {
+                text-align: start;
+            }
+        }
+
+        .text {
+            padding-bottom: 2rem;
+            color: $hover;
+            font-style: italic;
+            font-size: 1.4rem;
+        }
+
+        .btn {
+            background-color: $color2;
+            text-decoration: none;
+            color: $background;
+            font-weight: bold;
+            font-size: 1.4rem;
+            font-style: italic;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 999px;
+            transition: .4s;
+            margin-bottom: 1rem;
+
+            @media(max-width: 799px) {
+                display: grid;
+                justify-self: center;
+            }
+
+            &:hover {
+                background-color: $hover;
+                color: #0d0c0a;
+                font-size: 1.3rem;
+            }
         }
     }
 }

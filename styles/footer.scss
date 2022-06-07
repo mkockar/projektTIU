@@ -18,13 +18,21 @@
         margin-top: .5rem;
         margin-bottom: .5rem;
 
-        .o-nas, .sluzby{
-            display: grid;
-            grid-template-rows: repeat(4, 40px);
+        .o-nas,
+        .sluzby {
+            /*display: grid;
+            grid-template-rows: repeat(4, 40px);*/
+
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
             a {
                 text-decoration: none;
                 color: black;
                 font-style: italic;
+                font-size: 1.8rem;
+                text-align: center;
 
                 &:hover {
                     color: $background;
@@ -35,7 +43,7 @@
             .nadpis {
                 color: $background;
                 font-weight: bold;
-                font-size: 130%;
+                font-size: 2rem;
                 font-style: inherit;
                 text-decoration: underline;
             }
@@ -47,22 +55,21 @@
 
             .text {
                 font-style: italic;
+                font-size: 1.8rem;
             }
 
             .nadpis {
                 text-decoration: none;
                 color: $background;
                 font-weight: bold;
-                font-size: 130%;
+                font-size: 2rem;
                 text-decoration: underline;
             }
         }
     }
 
     .map {
-        //height: 100%;
         width: 90%;
-//        margin: .5rem 0;
         justify-self: center;
     }
 
@@ -76,7 +83,7 @@
         .social {
             text-decoration: none;
             color: $background;
-            font-size: 110%;
+            font-size: 1.8rem;
             font-weight: bold;
         }
 
@@ -106,39 +113,29 @@
             grid-template-columns: repeat(3, auto);
             gap: 1rem;
 
-            .o-nas {
-                grid-template-rows: repeat(4, auto);
-
-                a {
-                    font-size: 50%;
-                }
-
-                .nadpis {
-                    font-size: 80%;
-                }
-            }
-
+            .o-nas,
             .sluzby {
                 grid-template-rows: repeat(4, auto);
 
                 a {
-                    font-size: 50%;
+                    font-size: 1.2rem;
                 }
 
                 .nadpis {
-                    font-size: 80%;
+                    font-size: 1.8rem;
                 }
             }
+
 
             .kontakt {
                 grid-template-rows: repeat(5, auto);
 
                 .text {
-                    font-size: 50%;
+                    font-size: 1.2rem;
                 }
 
                 .nadpis {
-                    font-size: 80%;
+                    font-size: 1.8rem;
                 }
             }
         }
@@ -149,27 +146,16 @@
             grid-template-columns: repeat(3, auto);
             gap: 1rem;
 
-            .o-nas {
-                grid-template-rows: repeat(4, auto);
-
-                a {
-                    font-size: 70%;
-                }
-
-                .nadpis {
-                    font-size: 100%;
-                }
-            }
-
+            .o-nas,
             .sluzby {
                 grid-template-rows: repeat(4, auto);
 
                 a {
-                    font-size: 70%;
+                    font-size: 1.4rem;
                 }
 
                 .nadpis {
-                    font-size: 100%;
+                    font-size: 2rem;
                 }
             }
 
@@ -177,11 +163,11 @@
                 grid-template-rows: repeat(5, auto);
 
                 .text {
-                    font-size: 70%;
+                    font-size: 1.4rem;
                 }
 
                 .nadpis {
-                    font-size: 100%;
+                    font-size: 2rem;
                 }
             }
         }

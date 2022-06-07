@@ -1,12 +1,46 @@
 @import "./colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
 
-html{
+:root {
+    font-size: 20px;
+
+    @media(min-width: 0px) {
+        font-size: 8px;
+    }
+
+    @media(min-width: 450px) {
+        font-size: 11px;
+    }
+
+    @media(min-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media(min-width: 1600px) {
+        font-size: 17px;
+    }
+
+}
+
+html {
     background-color: $background;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
+}
+
+.up {
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    z-index: 5;
+    position: fixed;
+    transition: .5s;
+
+    &:hover {
+        transform: scale(1.5);
+    }
 }

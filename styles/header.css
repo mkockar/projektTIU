@@ -20,10 +20,10 @@ nav {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-right: 1.5rem;
-  font-size: 120%;
+  font-size: 3rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
   nav {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -38,6 +38,33 @@ nav .img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+}
+
+nav .img:hover {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes spin {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
 }
 
 nav .img a img {
@@ -61,7 +88,7 @@ nav .menu {
           align-items: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   nav .menu {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -73,7 +100,13 @@ nav .menu {
 }
 
 nav .menu li {
-  font-size: 110%;
+  font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+  nav .menu li {
+    font-size: 1.8rem;
+  }
 }
 
 nav .menu li a {
@@ -87,6 +120,6 @@ nav .menu li a {
 nav .menu li a:hover {
   color: #72441b;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 2.1rem;
 }
 /*# sourceMappingURL=header.css.map */
